@@ -53,7 +53,7 @@ git --version
 
 ### Step 1: Clone the Repository
 
-git clone https://github.com/yourusername/node-docker-app.git
+git clone https://github.com/Manish-281/node-docker-app.git
 cd node-docker-app
 
 ---
@@ -180,30 +180,6 @@ docker run -d --name my-node-app -p 3000:3000 node-app:v2
 
 ---
 
-## Architecture
-
-┌─────────────────────────────────────┐
-│         Your Browser                │
-│      http://localhost:3000          │
-└──────────────┬──────────────────────┘
-               │
-               │ Port 3000
-               ▼
-┌─────────────────────────────────────┐
-│         Docker Host                 │
-│                                     │
-│  ┌───────────────────────────────┐  │
-│  │   Docker Container            │  │
-│  │                               │  │
-│  │   ┌───────────────────────┐   │  │
-│  │   │  Node.js App          │   │  │
-│  │   │  (Port 3000)          │   │  │
-│  │   └───────────────────────┘   │  │
-│  └───────────────────────────────┘  │
-└─────────────────────────────────────┘
-
----
-
 ## What I Learned
 
 - Writing a Dockerfile for a Node.js app
@@ -223,8 +199,8 @@ Pull requests are welcome! For major changes, please open an issue first.
 
 ## Author
 
-Your Name
-- GitHub: @yourusername - https://github.com/Manish-281
+Your Name : Manish Kumar
+- GitHub: @Manish-281 - https://github.com/Manish-281
 - LinkedIn: Your LinkedIn - https://www.linkedin.com/in/manishk670/
 
 ---
