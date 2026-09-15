@@ -53,7 +53,7 @@ git --version
 
 ### Step 1: Clone the Repository
 
-git clone https://github.com/Manish-281/node-docker-app.git
+git clone https://github.com/Manish-281/Project-Node-Dockerapp.git
 cd node-docker-app
 
 ---
