@@ -6,6 +6,19 @@
   "scripts": {
     "start": "node app.js"
   },
-  "author": "Manish"
-  
+  "author": "Manish",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
 }
+
+
+
+
+
+
+
+
+
+

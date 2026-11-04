@@ -1,20 +1,18 @@
-# Base images
 FROM node:18-alpine
 
-# Working Directory
 WORKDIR /app
 
-# Copy Package.json
-COPY package.json .
+COPY package*.json ./
+RUN npm install --omit=dev --no-audit --no-fund
 
-# Install Dependencies (if any)
-RUN npm install
+COPY app.js ./
+COPY src ./src
 
-#Copy code 
-COPY app.js .
+USER node
 
-# Expose Port
 EXPOSE 3000
 
-# App start
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+  CMD wget -qO- http://localhost:3000/api/health || exit 1
+
 CMD ["npm", "start"]
